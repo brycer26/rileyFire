@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import Pagination from '@mui/material/Pagination';
+import Stack from '@mui/material/Stack';
 
 const images = [
   '/amerex_logo.gif',
@@ -13,7 +15,7 @@ function SimpleCarousel() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrent((prev) => (prev + 1) % images.length);
-    }, 4000);
+    }, 5000);
     return () => clearInterval(interval);
   }, []);
 
@@ -50,8 +52,9 @@ function SimpleCarousel() {
         />
       </div>
       <div>
-        <button onClick={prevImage}>Prev</button>
-        <button onClick={nextImage}>Next</button>
+          <Stack spacing={2}>
+            <Pagination count={images.length} page={current + 1} onChange={(event, value) => setCurrent(value - 1)} color='error' />
+          </Stack>
       </div>
     </div>
   );
