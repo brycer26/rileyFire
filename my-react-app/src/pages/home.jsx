@@ -1,10 +1,22 @@
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
+import SimpleCarousel from '../components/carousel';
 
 const HomePage = () => {
   return (
-    <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', minHeight: '100vh', pt: 8, paddingTop: '50px' }}>
-      <Typography variant='h4' color='black'>Riley Fire and Safety</Typography>
+    <Box
+      sx={{
+        mt: '64px',
+        minHeight: 'calc(100vh - 64px)',
+        width: '100vw',
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        alignItems: 'center',
+        boxSizing: 'border-box',
+      }}
+    >
+      <SimpleCarousel />
     </Box>
   );
 };
