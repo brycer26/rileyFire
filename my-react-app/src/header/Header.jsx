@@ -18,7 +18,7 @@ function Header () {
             }}>
                 
                 <section className="header-top-logo">
-                <img src="/logo.png" alt="Logo" style={{ height: '200px', marginRight: '1rem' }} />
+                <img src="/logo.png" alt="Logo" style={{ height: '200px', marginRight: '1rem', paddingLeft: '5rem' }} />
                 </section>
 
                 <section className="navBar" style={{display: "flex", paddingRight: "20px"}}>

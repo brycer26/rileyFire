@@ -15,7 +15,7 @@ function SimpleCarousel() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrent((prev) => (prev + 1) % images.length);
-    }, 5000);
+    }, 7000);
     return () => clearInterval(interval);
   }, []);
 
@@ -52,6 +52,7 @@ function SimpleCarousel() {
         />
       </div>
       <div>
+        {/* pagination under images */}
           <Stack spacing={2}>
             <Pagination count={images.length} page={current + 1} onChange={(event, value) => setCurrent(value - 1)} color='error' />
           </Stack>
