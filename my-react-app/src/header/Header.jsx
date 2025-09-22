@@ -21,10 +21,10 @@ function Header () {
                 <img src="/logo.png" alt="Logo" style={{ height: '200px', marginRight: '1rem', paddingLeft: '5rem' }} />
                 </section>
 
-                <section className="navBar" style={{display: "flex", paddingRight: "20px"}}>
-                    <a href="#" style={{ margin: '0 1rem', fontSize: '1.2rem', textDecoration: 'none', color: '#333' }}>Home</a>
-                    <a href="#" style={{ margin: '0 1rem', fontSize: '1.2rem', textDecoration: 'none', color: '#333' }}>About Us</a>
-                    <a href="#" style={{ margin: '0 1rem', fontSize: '1.2rem', textDecoration: 'none', color: '#333' }}>Services</a>
+                <section className="navBar" style={{display: "flex", paddingRight: "20px", }}>
+                    <a href="#" style={{ margin: '0 1rem', fontSize: '1.2rem', color: '#333'  }}>Home</a>
+                    <a href="#" style={{ margin: '0 1rem', fontSize: '1.2rem', color: '#333' }}>About Us</a>
+                    <a href="#" style={{ margin: '0 1rem', fontSize: '1.2rem', color: '#333' }}>Services</a>
                 </section>
 
             </section>

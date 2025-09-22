@@ -5,6 +5,19 @@
   text-align: center;
 }
 
+.navBar a {
+  text-decoration: none;
+  transition: text-decoration 0.2s;
+  color: black;
+}
+
+.navBar a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 2px;
+  color: #007bff;
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;

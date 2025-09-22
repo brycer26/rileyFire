@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Pagination from '@mui/material/Pagination';
 import Stack from '@mui/material/Stack';
 
-const images = [
+const images = [  // picture paths
   '/amerex_logo.gif',
   '/logo.png',
   '/nafed_logo.jpg'

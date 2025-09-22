@@ -8,7 +8,7 @@ const HomePage = () => {
       sx={{
         mt: '64px',
         minHeight: 'calc(100vh - 64px)',
-        width: '100vw',
+        width: '100%',
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'center',
