@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Header () {
     return (
@@ -18,13 +19,13 @@ function Header () {
             }}>
                 
                 <section className="header-top-logo">
-                <img src="/logo.png" alt="Logo" style={{ height: '200px', marginRight: '1rem', paddingLeft: '5rem' }} />
+                <img src="/logo.png" alt="Logo" style={{ height: '150px', marginRight: '1rem', paddingLeft: '5rem' }} />
                 </section>
 
                 <section className="navBar" style={{display: "flex", paddingRight: "20px", }}>
-                    <a href="#" style={{ margin: '0 1rem', fontSize: '1.2rem', color: '#333'  }}>Home</a>
-                    <a href="#" style={{ margin: '0 1rem', fontSize: '1.2rem', color: '#333' }}>About Us</a>
-                    <a href="#" style={{ margin: '0 1rem', fontSize: '1.2rem', color: '#333' }}>Services</a>
+                    <Link to="/" style={{ margin: '0 1rem', fontSize: '1.2rem', color: '#333', textDecoration: 'none'  }}>Home</Link>
+                    <Link to="/about" style={{ margin: '0 1rem', fontSize: '1.2rem', color: '#333', textDecoration: 'none' }}>About Us</Link>
+                    <Link to="/services" style={{ margin: '0 1rem', fontSize: '1.2rem', color: '#333', textDecoration: 'none' }}>Services</Link>
                 </section>
 
             </section>
