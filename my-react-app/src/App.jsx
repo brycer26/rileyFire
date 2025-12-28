@@ -1,5 +1,5 @@
 import Header from './header/Header';
-import HomePage from './pages/Home';
+import HomePage from './pages/home';
 import AboutUs from './pages/AboutUs';
 import ServicesPage from './pages/Services';
 import './App.css';

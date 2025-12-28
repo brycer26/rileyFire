@@ -3,13 +3,15 @@ import { Link } from 'react-router-dom';
 
 function Header () {
     return (
-        <section className="header">
+        <section className="header" style={{ margin: 0, marginTop: '-2rem' }}>
 
             <section className="header-top" style={{
-                position: 'fixed',
+                position: 'relative',
                 top: 0,
-                width: '100%',
-                left: 0,
+                width: '100vw',
+                left: '50%',
+                marginLeft: '-50vw',
+                marginTop: 0,
                 backgroundColor: '#f8f8f8', 
                 padding: '1rem',
                 display: 'flex', 

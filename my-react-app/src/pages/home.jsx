@@ -16,6 +16,7 @@ const HomePage = () => {
         boxSizing: 'border-box',
       }}
     >
+      <Typography variant="h1" color="black" sx={{ fontSize: '2rem', fontWeight: 'bold', marginBottom: '2rem' }}>Welcome to Riley Fire and Safety</Typography>
       <SimpleCarousel />
     </Box>
   );
