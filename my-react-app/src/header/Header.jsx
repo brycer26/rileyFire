@@ -3,7 +3,15 @@ import { Link } from 'react-router-dom';
 
 function Header () {
     return (
-        <section className="header" style={{ margin: 0, marginTop: '-2rem' }}>
+        <section className="header" style={{ 
+            position: 'relative', 
+            margin: 0, 
+            marginTop: 'calc(-2rem - env(safe-area-inset-top))',
+            marginBottom: '2rem',
+            marginLeft: '-2rem',
+            marginRight: '-2rem',
+            top: 0
+        }}>
 
             <section className="header-top" style={{
                 position: 'relative',
