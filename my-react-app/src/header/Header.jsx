@@ -33,9 +33,9 @@ function Header () {
                 </section>
 
                 <section className="navBar" style={{display: "flex", paddingRight: "20px", }}>
-                    <Link to="/" style={{ margin: '0 1rem', fontSize: '1.2rem', color: '#333', textDecoration: 'none'  }}>Home</Link>
-                    <Link to="/about" style={{ margin: '0 1rem', fontSize: '1.2rem', color: '#333', textDecoration: 'none' }}>About Us</Link>
-                    <Link to="/services" style={{ margin: '0 1rem', fontSize: '1.2rem', color: '#333', textDecoration: 'none' }}>Services</Link>
+                    <Link to="/" style={{ margin: '0 1rem', fontSize: '1.2rem' }}>Home</Link>
+                    <Link to="/about" style={{ margin: '0 1rem', fontSize: '1.2rem' }}>About Us</Link>
+                    <Link to="/services" style={{ margin: '0 1rem', fontSize: '1.2rem' }}>Services</Link>
                 </section>
 
             </section>

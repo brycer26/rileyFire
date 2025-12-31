@@ -3,21 +3,24 @@ import Pagination from '@mui/material/Pagination';
 import Stack from '@mui/material/Stack';
 
 const images = [  // picture paths
-  '/amerex_logo.gif',
-  '/logo.png',
-  '/nafed_logo.jpg'
+  '/truckwithtree.jpg',
+  '/dog.jpg',
+  // '/amerex_logo.gif',
+  // '/logo.png',
+  // '/nafed_logo.jpg'
 ];
 
 function SimpleCarousel() {
   const [current, setCurrent] = useState(0);
 
-  // Automatically change image every 4 seconds
+  // Automatically change image every 7 seconds -- timer resets when image changes
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrent((prev) => (prev + 1) % images.length);
+      nextImage();
     }, 7000);
+
     return () => clearInterval(interval);
-  }, []);
+  }, [current]);
 
   const nextImage = () => setCurrent((current + 1) % images.length);
   const prevImage = () => setCurrent((current - 1 + images.length) % images.length);
@@ -31,8 +34,8 @@ function SimpleCarousel() {
       minHeight: '80vh'
     }}>
       <div style={{
-        width: '500px',
-        height: '350px',
+        width: '450px',
+        height: '400px',
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
@@ -54,7 +57,7 @@ function SimpleCarousel() {
       <div>
         {/* pagination under images */}
           <Stack spacing={2}>
-            <Pagination count={images.length} page={current + 1} onChange={(event, value) => setCurrent(value - 1)} color='error' />
+            <Pagination count={images.length} page={current + 1} onChange={(event, value) => setCurrent(value - 1)} color='error' size='small' />
           </Stack>
       </div>
     </div>

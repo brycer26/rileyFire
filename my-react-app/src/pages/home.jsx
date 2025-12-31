@@ -33,10 +33,10 @@ const HomePage = () => {
             }}
           >
             <img 
-              src="/dog.jpg" 
-              alt="Dog Photo" 
+              src="/truckwithtree.jpg"   // temporary, may change to something else. trying to figure out
+              alt="Truck with Tree Photo" 
               style={{ 
-                width: '500px',
+                width: '400px',
                 height: 'auto', 
                 borderRadius: '8px',
                 boxShadow: '0 4px 6px rgba(0,0,0,0.1)'
