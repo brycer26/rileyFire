@@ -66,7 +66,7 @@ const HomePage = () => {
           <iframe
             src={googleMapEmbedUrl}
             width="100%"
-            height="300"
+            height="350"
             style={{ border: 0 }}
             allowFullScreen=""
             loading="lazy"
@@ -87,9 +87,14 @@ const HomePage = () => {
           >
             Potential Lives Saved
           </Typography>
+          <Typography
+          varient="h1"
+          sx={{ color: 'text.secondary', fontSize: '1rem'}}>
+            and counting!
+
+          </Typography>
         </Box>
       </Container>
-      
         </Box>
     );
 }
