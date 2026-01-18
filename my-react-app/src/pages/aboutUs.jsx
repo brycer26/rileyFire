@@ -7,7 +7,7 @@ const AboutUs = () => {
             sx={{
                 mt: '64px',
                 color: 'black',
-                padding: '2rem',
+                padding: '1rem',
             }}
         >
            <Box sx={{ 
@@ -42,7 +42,7 @@ const AboutUs = () => {
                 <Typography variant="h5" sx={{ fontWeight: 'bold', marginBottom: '2rem', textAlign: 'left' }}> Unparalleled Service and Pricing! </Typography>
 
                 <Typography variant="body1" sx={{ lineHeight: 1.6, textAlign: 'left', marginBottom: '1.5rem' }}>
-                Riley Fire and Safety is a small family owned business based out of Bardstown KY with over 21 years of experience in the Fire Protection industry!
+                Riley Fire and Safety is a small family owned business based out of Bardstown, KY with over 21 years of experience in the Fire Protection industry!
                 </Typography>
                 
                 <Typography variant="body1" sx={{ lineHeight: 1.6, textAlign: 'left' }}>
